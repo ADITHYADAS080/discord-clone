@@ -64,5 +64,4 @@ function Sidebar() {
     </div>
   )
 }
-// import './Sidebar.css'; className="Sidebar"
 export default Sidebar
