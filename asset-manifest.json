@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/discord-clone/static/css/main.fc1e3637.css",
-    "main.js": "/discord-clone/static/js/main.cbacee2d.js",
+    "main.css": "/discord-clone/static/css/main.89c66f8c.css",
+    "main.js": "/discord-clone/static/js/main.5260e3e9.js",
     "static/js/453.b9ad2473.chunk.js": "/discord-clone/static/js/453.b9ad2473.chunk.js",
     "static/media/1.jpg": "/discord-clone/static/media/1.9d26fcef82cdd102a9a3.jpg",
     "index.html": "/discord-clone/index.html",
-    "main.fc1e3637.css.map": "/discord-clone/static/css/main.fc1e3637.css.map",
-    "main.cbacee2d.js.map": "/discord-clone/static/js/main.cbacee2d.js.map",
+    "main.89c66f8c.css.map": "/discord-clone/static/css/main.89c66f8c.css.map",
+    "main.5260e3e9.js.map": "/discord-clone/static/js/main.5260e3e9.js.map",
     "453.b9ad2473.chunk.js.map": "/discord-clone/static/js/453.b9ad2473.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc1e3637.css",
-    "static/js/main.cbacee2d.js"
+    "static/css/main.89c66f8c.css",
+    "static/js/main.5260e3e9.js"
   ]
 }
