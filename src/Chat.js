@@ -8,7 +8,8 @@ function Chat() {
     <div className='chat'>
       <ChatHeader />
       <div className="chat__message">
-      <Message />
+      <Message />     
+     <Message />
       </div>
       <div className="chat__input">
         <AddCircle fontSize='large' />
