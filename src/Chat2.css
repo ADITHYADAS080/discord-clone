@@ -1,0 +1,79 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #363a3f;
+    height: 100vh;
+}
+
+.chat__message {
+    flex: 1;
+    overflow-y: auto; /* Allows scrolling of messages if they exceed the viewport height */
+}
+
+.chat__input {
+    color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px;
+    border-top: 1px solid grey;
+    background-color: #474b53;
+}
+
+.chat__input > form > input {
+    padding: 15px;
+    background: transparent;
+    border: none;
+    outline-width: 0;
+    color: white;
+    font-size: large;
+    width: 100%; /* Make input field take up full width */
+}
+
+.chat__input > form {
+    flex: 1;
+}
+
+.chatInput__button {
+    display: none;
+}
+
+.chatInputIcon > .MuiSvgIcon-root {
+    padding: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .chat__input {
+        margin: 10px; /* Reduce margins for mobile devices */
+        padding: 10px;
+    }
+
+    .chat__input > form > input {
+        font-size: medium; /* Adjust input text size for smaller screens */
+        padding: 10px;
+    }
+
+    .chat {
+        height: 100vh; /* Ensure chat fills the screen height on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .chat__input {
+        margin: 5px; /* Further reduce margins for very small screens */
+        padding: 8px;
+    }
+
+    .chat__input > form > input {
+        font-size: small; /* Reduce input font size for very small screens */
+        padding: 8px;
+    }
+
+    .chat {
+        height: 100vh;
+    }
+}
