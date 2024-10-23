@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Chat2.css"
+import "./Chat.css"
 import ChatHeader from './ChatHeader'
 import { AddCircle, CardGiftcard, EmojiEmotions, Gif } from '@mui/icons-material'
 import Message from './Message'
