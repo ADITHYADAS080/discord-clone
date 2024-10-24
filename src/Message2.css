@@ -1,30 +1,54 @@
+/* Base styles */
 .message {
-    display: flex;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
+
 .message_info {
-    margin-left: 20px;
-    color: white;
+  margin-left: 20px;
+  color: white;
 }
+
 .message_timestamp {
-    color: grey;
-    margin-left: 20px ;
-    font-size: x-small;
+  color: grey;
+  margin-left: 20px;
+  font-size: x-small;
 }
-@media (max-width: 600px) {
-    .message {
-      padding: 10px; /* Adjust padding for smaller screens */
-      flex-direction: column; /* Stack elements vertically */
-    }
-  
-    .message_info {
-      margin-left: 0px; /* Adjust or reset margin for smaller screens */
-      font-size: small; /* Reduce font size for mobile */
-    }
-  
-    .message_timestamp {
-      margin-left: 0px; /* Reset margin */
-      font-size: smaller; /* Adjust font size */
-    }
-  }  
+
+/* Media Query for Tablets and smaller */
+@media (max-width: 768px) {
+  .message {
+      padding: 15px;
+  }
+
+  .message_info {
+      margin-left: 10px;
+      font-size: small; /* Adjust font size for smaller screens */
+  }
+
+  .message_timestamp {
+      font-size: xx-small; /* Make the timestamp smaller for tablets */
+      margin-left: 10px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .message {
+      flex-direction: column; /* Stack message elements vertically on mobile */
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  .message_info {
+      margin-left: 0;
+      font-size: smaller; /* Reduce text size for mobile screens */
+  }
+
+  .message_timestamp {
+      font-size: xx-small;
+      margin-left: 0; /* Align timestamp with text for better fit */
+      margin-top: 5px;
+  }
+}

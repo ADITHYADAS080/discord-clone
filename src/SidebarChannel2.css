@@ -1,33 +1,47 @@
+/* Base styles */
 .sidebarChannel:hover > h4 {
-    color: white;
-    background-color: #40464b;
+  color: white;
+  background-color: #40464b;
 }
 
 .sidebarChannel > h4 {
-    display: flex;
-    padding-left: 15px;
-    align-items: center;
-    background-color: #2f3135;
-    color: grey;
-    cursor: pointer;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  background-color: #2f3135;
+  color: grey;
+  cursor: pointer;
 }
+
 .sidebarChannel__hash {
-    font-size: 30px;
-    padding: 8px;
+  font-size: 30px;
+  padding: 8px;
 }
-@media (max-width: 600px) {
-    .message {
-      padding: 10px; /* Adjust padding for smaller screens */
-      flex-direction: column; /* Stack elements vertically */
-    }
-  
-    .message_info {
-      margin-left: 0px; /* Adjust or reset margin for smaller screens */
-      font-size: small; /* Reduce font size for mobile */
-    }
-  
-    .message_timestamp {
-      margin-left: 0px; /* Reset margin */
-      font-size: smaller; /* Adjust font size */
-    }
+
+/* Media Query for Tablets and smaller */
+@media (max-width: 768px) {
+  .sidebarChannel > h4 {
+      padding-left: 10px;
+      font-size: 16px;
   }
+
+  .sidebarChannel__hash {
+      font-size: 24px;
+      padding: 6px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .sidebarChannel > h4 {
+      padding-left: 8px;
+      font-size: 14px;
+      flex-direction: column; /* Stack the hash and text vertically on smaller screens */
+      align-items: flex-start;
+  }
+
+  .sidebarChannel__hash {
+      font-size: 20px;
+      padding: 4px;
+  }
+}

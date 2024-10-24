@@ -5,9 +5,11 @@
     background-color: #363a3f;
     height: 100vh;
 }
-.chat__message{
+
+.chat__message {
     flex: 1px;
 }
+
 .chat__input {
     color: lightgrey;
     display: flex;
@@ -19,37 +21,51 @@
     border-top: 1px solid grey;
     background-color: #474b53;
 }
+
 .chat__input > form > input {
     padding: 15px;
     background: transparent;
     border: none;
-    /* width: 100px; */
     outline-width: 0;
     color: white;
     font-size: large;
 }
+
 .chat__input > form {
     flex: 1;
 }
+
 .chatInput__button {
     display: none;
 }
+
 .chatInputIcon > .MuiSvgIcon-root {
     padding: 5px;
 }
+
+/* Media query for mobile devices (max-width: 600px) */
 @media (max-width: 600px) {
-    .message {
-      padding: 10px; /* Adjust padding for smaller screens */
-      flex-direction: column; /* Stack elements vertically */
+    .chat {
+        flex: 1;
+        padding: 10px; /* Reduce padding */
     }
-  
-    .message_info {
-      margin-left: 0px; /* Adjust or reset margin for smaller screens */
-      font-size: small; /* Reduce font size for mobile */
+
+    .chat__input {
+        padding: 10px; /* Reduce padding for input area */
+        margin: 10px;  /* Reduce margin for mobile */
+        flex-direction: column; /* Stack elements vertically */
     }
-  
-    .message_timestamp {
-      margin-left: 0px; /* Reset margin */
-      font-size: smaller; /* Adjust font size */
+
+    .chat__input > form > input {
+        font-size: medium; /* Adjust font size for mobile */
+        padding: 10px; /* Reduce padding for input */
     }
-  }
+
+    .chat__input > form {
+        width: 100%; /* Ensure form takes full width */
+    }
+
+    .chatInputIcon > .MuiSvgIcon-root {
+        padding: 5px;
+    }
+}

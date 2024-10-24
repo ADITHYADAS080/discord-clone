@@ -15,19 +15,3 @@
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
-  @media (max-width: 600px) {
-    .message {
-      padding: 10px; /* Adjust padding for smaller screens */
-      flex-direction: column; /* Stack elements vertically */
-    }
-  
-    .message_info {
-      margin-left: 0px; /* Adjust or reset margin for smaller screens */
-      font-size: small; /* Reduce font size for mobile */
-    }
-  
-    .message_timestamp {
-      margin-left: 0px; /* Reset margin */
-      font-size: smaller; /* Adjust font size */
-    }
-  }  

@@ -1,103 +1,164 @@
+/* Base styles */
 .Sidebar {
     display: flex;
     flex-direction: column;
     flex: .25;
     height: 100vh;
     background-color: #2f3135;    
+}
+
+.Sidebar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2f3135;
+    color: white;
+    border-bottom: 3px solid #26282c;
+}
+
+.Sidebar__channels {
+    flex: 1;
+}
+
+.Sidebar__addchannels {
+    cursor: pointer;
+}
+
+.Sidebar__addchannels:hover {
+    color: white;
+}
+
+.Sidebar__channelsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2f3135;
+    color: gray;   
+}
+
+.Sidebar__header {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar__Voice, .sidebar__Profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    background-color: #2f3135;
+    padding: 10px;
+    border-top: 1px solid gray;
+}
+
+.sidebar__VoiceInfo {
+    flex: 1;
+    padding: 1px;
+}
+
+.sidebar__VoiceIcon {
+    color: #4fb185;
+}
+
+.sidebar__VoiceInfo > h3 {
+    color: #4fb185;
+    font-size: 13px;
+}
+
+.sidebar__VoiceInfo > p {
+    font-size: 12px;
+}
+
+.sidebar__VoiceIcons {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar__VoiceIcons > .MuiSvgIcon-root {
+    padding: 10px;
+}
+
+.sidebar__ProfileInfo {
+    flex: 1;
+    padding: 10px;
+}
+
+.sidebar__ProfileInfo > h3 {
+    color: white;
+}
+
+.sidebar__ProfileIcon {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar__ProfileIcon > .MuiSvgIcon-root {
+    padding: 5px;
+}
+
+/* Media Query for Tablets and smaller */
+@media (max-width: 768px) {
+    .Sidebar {
+        flex: 0.3;
     }
-    
-    .Sidebar__top{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: #2f3135;
-        color: white;
-        border-bottom: 3px solid #26282c;
-    
+
+    .Sidebar__top {
+        padding: 15px;
     }
-    
-    .Sidebar__channels {
-        flex: 1;
-    
-    }
-    
-    .Sidebar__addchannels {
-        cursor: pointer ;
-    }
-    
-    .Sidebar__addchannels:hover {
-        color: white;
-    }
+
     .Sidebar__channelsHeader {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-        background-color: #2f3135;
-        color: gray;   
+        padding: 8px;
     }
-    .Sidebar__header {
-        display: flex;
-        align-items: center;
-    }
+
     .sidebar__Voice, .sidebar__Profile {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: grey;
-        background-color: #2f3135;
-        padding: 10px;
-        border-top: 1px solid gray;
+        padding: 8px;
     }
-    .sidebar__VoiceInfo {
-        flex: 1;
-        padding: 1px;
-    }
-    .sidebar__VoiceIcon {
-        color: #4fb185;
-    }
+
     .sidebar__VoiceInfo > h3 {
-        color: #4fb185;
-        font-size: 13px;
-    }
-    .sidebar__VoiceInfo > p {
         font-size: 12px;
     }
-    .sidebar__VoiceIcons{
-        display: flex;
-        flex-direction: row;
+
+    .sidebar__VoiceInfo > p {
+        font-size: 10px;
     }
-    .sidebar__VoiceIcons > .MuiSvgIcon-root {
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .Sidebar {
+        flex: 0.2;
+        height: auto;
+    }
+
+    .Sidebar__top {
         padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .sidebar__ProfileInfo {
-        flex: 1;
-        padding: 10px;
+
+    .Sidebar__channelsHeader {
+        padding: 6px;
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .sidebar__ProfileInfo >h3 {
-        color: white;
+
+    .sidebar__Voice, .sidebar__Profile {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
     }
-    .sidebar__ProfileIcon{
-        display: flex;
-        flex-direction: row
+
+    .sidebar__VoiceInfo > h3 {
+        font-size: 10px;
     }
-    .sidebar__ProfileIcon > .MuiSvgIcon-root {
-        padding: 5px;
+
+    .sidebar__VoiceInfo > p {
+        font-size: 9px;
     }
-@media (max-width: 600px) {
-    .message {
-      padding: 10px; /* Adjust padding for smaller screens */
-      flex-direction: column; /* Stack elements vertically */
+
+    .sidebar__VoiceIcons {
+        justify-content: space-around;
     }
-  
-    .message_info {
-      margin-left: 0px; /* Adjust or reset margin for smaller screens */
-      font-size: small; /* Reduce font size for mobile */
-    }
-  
-    .message_timestamp {
-      margin-left: 0px; /* Reset margin */
-      font-size: smaller; /* Adjust font size */
-    }
-  }  
+}
