@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sidebar.css';
+import './Sidebar2.css';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import Add from '@mui/icons-material/Add';
 import SidebarChannel from './SidebarChannel';

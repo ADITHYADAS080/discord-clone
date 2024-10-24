@@ -1,5 +1,5 @@
 import React from 'react'
-import "./ChatHeader.css"
+import "./ChatHeader2.css"
 import { EditLocation, HelpRounded, Notifications, PeopleAltRounded, SearchRounded, SendRounded } from '@mui/icons-material'
 function ChatHeader() {
   return (
