@@ -7,9 +7,11 @@ function Chat() {
   return (
     <div className='chat'>
       <ChatHeader />
+      <div className="scrollable-div">
       <div className="chat__message">
         <Message />
-      </div>
+      </div> 
+      </div> 
       <div className="chat__input">
         <AddCircle fontSize='large' />
         <form>

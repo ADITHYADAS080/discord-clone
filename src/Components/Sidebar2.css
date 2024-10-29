@@ -7,6 +7,21 @@
     background-color: #2f3135;    
 }
 
+.scrollable__div{
+    overflow-y: scroll;
+    height: 57vh;
+    scrollbar-width: none;
+}
+
+.expand__more {
+    
+    margin-top: 5px;
+}
+.expand__more :hover {
+    color: white;
+    cursor: pointer;
+}
+
 .Sidebar__top {
     display: flex;
     justify-content: space-between;

@@ -10,7 +10,7 @@ import Mic from '@mui/icons-material/Mic';
 import Headphones from '@mui/icons-material/Headphones';
 import Settings from '@mui/icons-material/Settings';
 import { Avatar } from '@mui/material';
-import imgg from "../src/1.jpg"
+import imgg from "../Components/1.jpg";
 
 function Sidebar() {
   return (
@@ -23,16 +23,18 @@ function Sidebar() {
       <div className="Sidebar__channels">
         <div className="Sidebar__channelsHeader">
           <div className="Sidebar__header">
-            <ExpandMore />
+            <div>
+            <ExpandMore className='expand__more' />
+            </div>
             <h4>Text Channels </h4>
 
           </div>
           <Add className="Sidebar__addchannels" />
         </div> 
+        <div className="scrollable__div">
         <div className="sidebar__channelList">
           <SidebarChannel />
-          <SidebarChannel />
-          <SidebarChannel />
+        </div>
         </div>
       </div>
       <div className="sidebar__Voice">

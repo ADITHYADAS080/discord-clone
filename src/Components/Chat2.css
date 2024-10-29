@@ -5,6 +5,11 @@
     background-color: #363a3f;
     height: 100vh;
 }
+.scrollable-div {
+    overflow-y: scroll;
+    height: 100vh;
+    scrollbar-width: none;
+}
 
 .chat__message {
     flex: 1px;
@@ -15,7 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding: 3px;
+    padding-left: 10px;
     border-radius: 5px;
     margin: 20px;
     border-top: 1px solid grey;
